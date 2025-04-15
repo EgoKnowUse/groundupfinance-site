@@ -7,48 +7,54 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('your-background.jpg.png'); /* Replace with your actual image file */
+      background-image: url('your-background.jpg.png');
       background-size: cover;
       background-position: center;
-      color: white;
+      color: black;
     }
 
     .navbar {
-      display: flex;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 15px 30px;
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
       z-index: 1000;
     }
 
     .navbar a {
-      color: white;
+      color: black;
       text-decoration: none;
-      margin-right: 20px;
+      margin: 10px 20px;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     .navbar a:hover {
-      color: lightblue;
+      color: darkblue;
     }
 
     .content {
+      margin-left: 220px;
       padding: 100px 20px;
       text-align: center;
     }
 
     .section {
       padding: 80px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(255, 255, 255, 0.85);
       margin: 40px auto;
       max-width: 800px;
       border-radius: 15px;
+      color: black;
     }
 
     h2 {
-      color: #00eaff;
+      color: #003366;
     }
   </style>
 </head>
