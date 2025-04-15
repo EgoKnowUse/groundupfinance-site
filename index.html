@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ground Up Finance</title>
+  <meta charset="UTF-8">
+  <title>GroundUp Finance</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: url('background.jpg.png') no-repeat center center fixed;
-      background-size: cover;
       font-family: Arial, sans-serif;
+      background-image: url('your-background.jpg.png'); /* Replace with your actual image file */
+      background-size: cover;
+      background-position: center;
       color: white;
-      text-shadow: 0 0 5px black;
     }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
+
+    .navbar {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: lightblue;
+    }
+
+    .content {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .section {
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 40px auto;
+      max-width: 800px;
+      border-radius: 15px;
+    }
+
+    h2 {
+      color: #00eaff;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Welcome to Ground Up Finance</h1>
-    <p>We're building this site from the ground up — with style.</p>
+
+  <div class="navbar">
+    <a href="#articles">Articles</a>
+    <a href="#videos">Videos</a>
   </div>
+
+  <div class="content">
+    <h1>Welcome to GroundUp Finance</h1>
+    <p>Breaking down finance, one block at a time.</p>
+  </div>
+
+  <div class="section" id="articles">
+    <h2>📘 Articles</h2>
+    <p>Coming soon: deep dives into valuation, investing, and more.</p>
+  </div>
+
+  <div class="section" id="videos">
+    <h2>🎥 Videos</h2>
+    <p>Video explainers and tutorials will live here.</p>
+  </div>
+
 </body>
 </html>
